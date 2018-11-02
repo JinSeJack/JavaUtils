@@ -33,11 +33,7 @@ public class FileCharsetParser {
             }
             bis.reset();
             if (!checked) {
-                // int len = 0;
-                int loc = 0;
- 
                 while ((read = bis.read()) != -1) {
-                    loc++;
                     if (read >= 0xF0)
                         break;
                     if (0x80 <= read && read <= 0xBF) // 单独出现BF以下的，也算是GBK
