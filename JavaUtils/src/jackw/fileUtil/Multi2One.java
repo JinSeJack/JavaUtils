@@ -21,7 +21,7 @@ public class Multi2One {
 	public static String files2File(String src) {
 		File file = new File("file.txt");
 		if (!file.exists()) {
-			try {
+			try { 
 				file.createNewFile();
 			} catch (IOException e) {
 				e.printStackTrace();

@@ -10,7 +10,7 @@ public class FileCharsetParser {
 	public static String get_charset(File file) {
         String charset = "GBK";
         byte[] first3Bytes = new byte[3];//首先3个字节
-        try {
+        try { 
             boolean checked = false;
             BufferedInputStream bis = new BufferedInputStream(
                     new FileInputStream(file));
